@@ -37,8 +37,8 @@ tasks:
     dest: ./resources/[standalone]/bob74_ipl
 
   - action: download_github
-    src: https://github.com/esx-framework/esx-legacy
-    ref: main
+    src: https://github.com/esx-framework/esx_core
+    ref: 1.8.5
     dest: ./tmp/esx
     
   - action: move_path

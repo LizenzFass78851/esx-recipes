@@ -41,7 +41,7 @@ tasks:
 
   - action: download_github
     src: https://github.com/esx-framework/esx_core
-    ref: $esx_legacy_version
+    ref: "{{esx_legacy_version}}"
     dest: ./tmp/esx
     
   - action: move_path

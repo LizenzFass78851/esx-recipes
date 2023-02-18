@@ -5,9 +5,6 @@ version: 0.3.7
 author: ESX Framework
 description: The official recipe of the most popular FiveM RP framework, containing Jobs, Housing, Vehicles & more!
 
-variables:
-  esx_legacy_version: "1.8.5"
-
 tasks:
   # Download default CFX resources
   - action: download_github
@@ -38,12 +35,15 @@ tasks:
     src: https://github.com/Bob74/bob74_ipl
     ref: master
     dest: ./resources/[standalone]/bob74_ipl
-
+    
+  ## -----
+  ## change the version of esx_core in the line with "ref: 1.8.5" to "ref: 1.9.1" or similar if desired
   - action: download_github
     src: https://github.com/esx-framework/esx_core
-    ref: "{{esx_legacy_version}}"
+    ref: 1.8.5
     dest: ./tmp/esx
-    
+  ## -----
+  
   - action: move_path
     src: ./tmp/esx/[esx]
     dest: ./resources/[esx]

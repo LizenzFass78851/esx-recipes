@@ -39,8 +39,8 @@ tasks:
   ## -----
   ## change the version of esx_core in the line with "ref: 1.8.5" to "ref: 1.9.1" or similar if desired
   - action: download_github
-    src: https://github.com/esx-framework/esx_core
-    ref: 1.9.0
+    src: ht.tps://github.com/esx-framework/esx_core
+    ref: 1.8.5
     dest: ./tmp/esx
   ## -----
   

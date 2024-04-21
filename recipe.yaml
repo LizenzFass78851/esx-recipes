@@ -24,6 +24,10 @@ tasks:
     dest: ./server.cfg
 
   - action: move_path
+    src: ./tmp/recipe/zap96x96.png
+    dest: ./zap96x96.png
+
+  - action: move_path
     src: ./tmp/recipe/loadingscreen
     dest: ./resources/loadingscreen
   

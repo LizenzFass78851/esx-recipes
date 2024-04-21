@@ -30,7 +30,12 @@ tasks:
   # Download basic resources and ESX dependencies
 
   - action: connect_database
-  
+
+  - action: download_github
+    src: https://github.com/Blumlaut/EasyAdmin
+    ref: 7.2
+    dest: ./resources/[standalone]/EasyAdmin
+
   - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: master

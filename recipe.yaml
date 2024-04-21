@@ -37,7 +37,7 @@ tasks:
 
   - action: download_github
     src: https://github.com/Blumlaut/EasyAdmin
-    ref: 7.2
+    ref: '7.2'
     dest: ./resources/[standalone]/EasyAdmin
 
   - action: download_github

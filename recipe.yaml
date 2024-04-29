@@ -41,6 +41,11 @@ tasks:
     dest: ./resources/[standalone]/EasyAdmin
 
   - action: download_github
+    src: https://github.com/kibook/weathersync
+    ref: master
+    dest: ./resources/[standalone]/weathersync
+
+  - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: master
     dest: ./resources/[standalone]/bob74_ipl

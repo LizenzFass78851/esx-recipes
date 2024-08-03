@@ -71,11 +71,6 @@ tasks:
     ref: main
     dest: ./resources/[hud]/ev-hud
 
-  - action: download_github
-    src: https://github.com/Benzo00/esx-radio
-    ref: main
-    dest: ./resources/[esx_addons]/esx-radio
-
   - action: query_database
     file: ./tmp/esx/[SQL]/legacy.sql
 
@@ -96,12 +91,6 @@ tasks:
     file: ./resources/[hud]/ev-hud/config/config.js
     search: 'Config.useFramework = false // Set to true to use ESX, VRP or QBCore'
     replace: 'Config.useFramework = true // Set to true to use ESX, VRP or QBCore'
-  
-  ## Patching configs: esx-radio
-  - action: replace_string
-    file: ./resources/[esx_addons]/esx-radio/config.lua
-    search: 'Key = "UP"'
-    replace: 'Key = "F5"'
 
   - action: replace_string
     mode: all_vars

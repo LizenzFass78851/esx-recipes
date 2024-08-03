@@ -16,7 +16,7 @@ tasks:
   # Download and prepare server.cfg / loadingscreen / database
   - action: download_github
     src: https://github.com/LizenzFass78851/esx-recipes
-    ref: changeable
+    ref: changeable_lite
     dest: ./tmp/recipe
 
   - action: move_path
@@ -60,16 +60,6 @@ tasks:
   - action: move_path
     src: ./tmp/esx/[esx_addons]
     dest: ./resources/[esx_addons]
-    
-  - action: download_github
-    src: https://github.com/AvarianKnight/pma-voice
-    ref: main
-    dest: ./resources/[standalone]/pma-voice
-
-  - action: download_github
-    src: https://github.com/EntityEvolution/ev-hud
-    ref: main
-    dest: ./resources/[hud]/ev-hud
 
   - action: query_database
     file: ./tmp/esx/[SQL]/legacy.sql
@@ -86,11 +76,6 @@ tasks:
     file: ./resources/[esx_addons]/esx_status/config.lua
     search: 'Config.Display        = true'
     replace: 'Config.Display        = false'
-
-  - action: replace_string
-    file: ./resources/[hud]/ev-hud/config/config.js
-    search: 'Config.useFramework = false // Set to true to use ESX, VRP or QBCore'
-    replace: 'Config.useFramework = true // Set to true to use ESX, VRP or QBCore'
 
   - action: replace_string
     mode: all_vars
